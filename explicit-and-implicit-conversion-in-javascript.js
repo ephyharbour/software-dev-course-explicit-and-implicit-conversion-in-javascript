@@ -19,7 +19,7 @@ Use console.log() to clearly show the before-and-after type conversions.
 */
 
 
-let result = "5" - 2;
+let result = Number("5") - 2;
 console.log("The result is: " + result);
 
 let isValid = Boolean("false");
@@ -27,6 +27,26 @@ if (isValid) {
     console.log("This is valid!");
 }
 
-let age = "25";
+let age = Number("25");
 let totalAge = age + 5;
 console.log("Total Age: " + totalAge);
+
+
+//Implicit conversion//
+
+let userName = "Amy";
+let ageOne = 2;
+let ageTwo = "6";
+let totalAgeNow = ageOne + ageTwo;
+console.log("This is an example of Implicit Conversion:")
+currentStats = console.log( `${userName} is  ${totalAge} years old.`);
+
+
+//Explicit conversion//
+
+let userName1 = null;
+/*let ageOne1 = 2;
+let ageTwo1 = "6";
+let totalAge1 = ageOne + Number(ageTwo);*/
+console.log("This is an example of Edge Conversion:")
+statusNow = console.log(`${userName} is the new  ${String(userName1)} as a string`);
